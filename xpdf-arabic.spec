@@ -14,6 +14,8 @@ Requires:	xpdf
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
+%define		_prefix		/usr/X11R6
+
 %description
 The Xpdf language support packages include CMap files, text encodings,
 and various other configuration information necessary or useful for
@@ -43,10 +45,10 @@ rm -rf $RPM_BUILD_ROOT
 %post
 umask 022
 if [ ! -f /etc/xpdfrc ]; then
-	echo 'unicodeMap	ISO-8859-6	/usr/share/xpdf/ISO-8859-6.unicodeMap' >> /etc/xpdfrc
+	echo 'unicodeMap	ISO-8859-6	/usr/X11R6/share/xpdf/ISO-8859-6.unicodeMap' >> /etc/xpdfrc
 else
  if ! grep -q 'ISO-8859-6\.unicodeMap' /etc/xpdfrc; then
-	echo 'unicodeMap	ISO-8859-6	/usr/share/xpdf/ISO-8859-6.unicodeMap' >> /etc/xpdfrc
+	echo 'unicodeMap	ISO-8859-6	/usr/X11R6/share/xpdf/ISO-8859-6.unicodeMap' >> /etc/xpdfrc
  fi
 fi
 
