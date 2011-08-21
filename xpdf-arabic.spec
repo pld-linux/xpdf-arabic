@@ -3,7 +3,7 @@ Summary(pl.UTF-8):	Wsparcie kodowania ISO-8859-6 dla xpdf
 Name:		xpdf-arabic
 Version:	20110815
 Release:	1
-License:	GPL
+License:	GPL v2 or GPL v3
 Group:		X11/Applications
 Source0:	ftp://ftp.foolabs.com/pub/xpdf/%{name}-2011-aug-15.tar.gz
 # Source0-md5:	ae8cdd4759295e02988506e7a570d00c
