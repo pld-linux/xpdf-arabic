@@ -1,5 +1,5 @@
 Summary:	ISO-8859-6 encoding support for xpdf
-Summary(pl.UTF-8):	Wsparcie kodowania ISO-8859-6 dla xpdf
+Summary(pl.UTF-8):	Obsługa kodowania ISO-8859-6 dla xpdf
 Name:		xpdf-arabic
 Version:	20110815
 Release:	1
@@ -25,7 +25,7 @@ Arabic PDF files.
 %description -l pl.UTF-8
 Pakiety wspierające języki Xpdf zawierają pliki CMap, kodowania oraz
 różne inne informacje konfiguracyjne niezbędne bądź przydatne przy
-określonych zestawach znaków. (Nie zawierają żadnych fontów).
+określonych zestawach znaków (nie zawierają żadnych fontów).
 Ten pakiet zawiera pliki potrzebne do używania narzędzi Xpdf z
 arabskimi plikami PDF.
 
