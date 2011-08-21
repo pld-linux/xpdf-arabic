@@ -1,12 +1,12 @@
 Summary:	ISO-8859-6 encoding support for xpdf
 Summary(pl.UTF-8):	Wsparcie kodowania ISO-8859-6 dla xpdf
 Name:		xpdf-arabic
-Version:	1.0
-Release:	3
+Version:	20110815
+Release:	1
 License:	GPL
 Group:		X11/Applications
-Source0:	ftp://ftp.foolabs.com/pub/xpdf/%{name}.tar.gz
-# Source0-md5:	67f05f65bc64bf022b36138c7c26746d
+Source0:	ftp://ftp.foolabs.com/pub/xpdf/%{name}-2011-aug-15.tar.gz
+# Source0-md5:	ae8cdd4759295e02988506e7a570d00c
 URL:		http://www.foolabs.com/xpdf/
 Requires(post,preun):	grep
 Requires(post,preun):	xpdf
@@ -61,4 +61,4 @@ fi
 %files
 %defattr(644,root,root,755)
 %doc README add-to-xpdfrc
-%{_datadir}/xpdf/*
+%{_datadir}/xpdf/ISO-8859-6.unicodeMap
